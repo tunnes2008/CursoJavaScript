@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" type="text/css" href="css/reset.css">
+      <link rel="stylesheet" type="text/css" href="css/estilo.css">
+       <link rel="stylesheet" type="text/css" href="css/novoCartao.css">
+
+      <link rel="stylesheet" type="text/css" href="css/cabecalho.css">
+      <link rel="stylesheet" type="text/css" href="css/opcoesDaPagina.css">
+      <link rel="stylesheet" type="text/css" href="css/opcoesDoCartao.css">
+      <link rel="stylesheet" type="text/css" href="css/botaoSync.css">
+
+
+      <title>Ceep</title>
+   </head>
+   <body>
+      <header class="cabecalho conteiner">
+         <h1>Ceep</h1>
+         <button id="mudaLayout">Linhas</button>
+
+
+
+<div class="opcoesDaPagina">
+
+  <input type="search" id="busca" placeholder="busca" class="opcoesDaPagina-opcao" />
+
+  <button id="ajuda" class="opcoesDaPagina-opcao opcoesDaPagina-botao">?</button>
+
+  <button id="sync" class="opcoesDaPagina-opcao opcoesDaPagina-botao botaoSync"></button>
+
+</div>
+
+
+      </header>
+
+      <form class="novoCartao container">
+         <textarea class="novoCartao-conteudo" placeholder="Digite aqui"></textarea>
+         <input type="submit" class="novoCartao-salvar" value="Salvar" />
+      </form>
+
+      <!--  <p>Estudando<em lang="en">Javascript</em></p> usar o lang em textos em inglês melhora o SEO -->
+      <section class="conteiner mural"></section>
+      <script src="js/jquery.js"></script>
+      <script src="js/criaOpcoesDoCartao.js"></script>
+      <script src="js/controladorDeCartoes.js"></script>
+      <script src="js/mudaLayout.js"></script>
+      <script src="js/busca.js"></script>
+      <script src="js/novoCartao.js"></script>
+      <script src="js/ajuda.js"></script>
+      <script src="js/sincronizacao.js"></script>
+
+
+   </body>
+</html>

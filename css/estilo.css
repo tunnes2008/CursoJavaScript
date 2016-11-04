@@ -1,0 +1,77 @@
+.conteiner {
+    padding: 0 10%;
+}
+.cabecalho {
+    background-color: #0082c7;
+    margin: 16px;
+}
+.mural {
+    text-align: center;
+}
+.cartao {
+    background: #ebef40;
+    padding: 16px;
+    margin: 16px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.cartao--some{
+    opacity: 0;
+    transition: 0.2s ease-in;
+}
+
+#mudaLayout{
+    display: none;
+}
+
+.mural--linhas{
+    flex-direction: column;
+}
+
+.mural--linhas .cartao{
+    flex-basis: auto;width: auto; display: block;
+}
+
+/* Breakpoint */
+
+@media (min-width: 560px) {
+    .cartao {
+        width: 190px;
+        display: inline-block;
+        text-align: left;
+    }
+    .mural {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .mural--coluna{
+      flex-direction: column;
+    }
+    .cartao {
+        flex-basis: 190px;
+        flex-grow: 1;
+    }
+
+    #mudaLayout{
+        display: inline-block;
+    }
+
+}
+
+.cartao .opcoesDoCartao-opcao{
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+.cartao:hover .opcoesDoCartao-opcao,
+.cartao:focus .opcoesDoCartao-opcao,
+.cartao .opcoesDoCartao:focus .opcoesDoCartao-opcao,
+.cartao .opcoesDoCartao-opcao:focus{
+    opacity: 1;
+}
+
+/* display:block fica um em baixo do outro  largura e altura não funciona em elementos block */
+/* display:inline fica tudo na mesma linha - um do lado do outro - largura e altura não funciona em elementos inline */
+/* display:inline-block - mesma linha - funciona largura e altura e comportamento pai */
